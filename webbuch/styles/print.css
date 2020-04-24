@@ -1294,7 +1294,11 @@ ol.upper-latin {
       -epubx-enabled: -epubx-expr( page-number % 2==1 ? 'true': 'false');
       left: 34mm;
     }
+}
 
-
-
+div.backcover {
+  page: cover;
+  content: url("images/back-cover.png");
+  width: 100%;
+  height: 100%;
 }
