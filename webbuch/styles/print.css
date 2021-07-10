@@ -983,8 +983,8 @@ section[data-type="fm2"] {
 }
 
 section[data-type="fm2"] p {
-  letter-spacing: 0pt;
-  word-spacing: 0pt;
+  letter-spacing: -0.2pt;
+  word-spacing: -0.2pt;
 }
 
 section[data-type="fm2"] h2.part, section[data-type="fm2"] table, section[data-type="chapter"] h2.entry-title {
@@ -1004,6 +1004,11 @@ section[data-type="fm2"] table + p {
 .txtnospace p {
   letter-spacing: -0.1pt !important;
   word-spacing: 0 !important;
+}
+
+.txtplusspace p {
+  letter-spacing: 0.3pt !important;
+  word-spacing: 0.3pt !important;
 }
 
 h2 {
@@ -1081,7 +1086,7 @@ ol.upper-latin {
 .footerurlLeft {
   height: 13pt;
   position: absolute;
-  content: "Pre-release v1.0";
+  content: "v1.0";
   bottom: 7.25mm;
   text-align: center;
   font-family: -apple-system,BlinkMacSystemFont,"noto sans",helvetica neue,helvetica,roboto,segoe ui,arial,sans-serif;
@@ -1127,10 +1132,9 @@ ol.upper-latin {
 
 @-epubx-page-master first-page-cover {
   -epubx-page: 1;
-  background: url("../images/cover.jpg");
+  background: url("../images/cover.png");
   background-size: cover;
 }
-/* pages layout
 
 @-epubx-page-master second-page-backcover {
   -epubx-page: 12;
@@ -1138,17 +1142,17 @@ ol.upper-latin {
 }
 
 @-epubx-page-master second-page-backcover {
-  -epubx-page: 24;
+  -epubx-page: 26;
   background-size: cover;
 }
 
 @-epubx-page-master second-page-backcover {
-  -epubx-page: 60;
+  -epubx-page: 38;
   background-size: cover;
 }
 
 @-epubx-page-master second-page-backcover {
-  -epubx-page: 84;
+  -epubx-page: 52;
   background-size: cover;
 }
 
@@ -1158,10 +1162,20 @@ ol.upper-latin {
 }
 
 @-epubx-page-master second-page-backcover {
-  -epubx-page: 102;
+  -epubx-page: 106;
   background-size: cover;
 }
 
+@-epubx-page-master second-page-backcover {
+  -epubx-page: 122;
+  background-size: cover;
+}
+
+@-epubx-page-master second-page-backcover {
+  -epubx-page: 130;
+  background-size: cover;
+}
+/* pages layout
 @-epubx-page-master second-page-backcover {
   -epubx-page: 108;
   background-size: cover;
